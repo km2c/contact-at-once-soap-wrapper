@@ -1,0 +1,39 @@
+html
+    head
+        title= "Soap service"
+        link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous")
+        link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+        link(rel='stylesheet' href='/public/styles/main.css')
+        
+    body
+        nav(class="navbar navbar-inverse navbar-fixed-top")
+            div(class="container")
+                div(class="navbar-header")
+                    div(class="navbar-brand") Contact At Once -- Soap Service
+        div(class="container main")
+            form(action="#" class="get-info")
+                div(class="form-group")
+                    label(for="downloadType") Download Type:
+                    select(class="form-control" name="downloadType")
+                        option(value="lead-detail") Lead Details
+                        option(value="im-detail") IM Details
+                        option(value="performance-statistical-summary") Performance Statistical Summary
+                div(class="form-group")
+                    label(for="providerId") Provider ID:
+                    input(type="text" class="form-control" name="providerId" value="")
+                div(class="form-group")
+                    label(for="client") User Name:
+                    input(type="text" class="form-control" name="client" value="")
+                div(class="form-group")
+                    label(for="password") Password:
+                    input(type="password" class="form-control" name="password" value="")
+                div(class="form-group")
+                    label(for="startDate") Start Date:
+                    input(type="date" class="form-control" name="startDate" value="")
+                div(class="form-group")
+                    label(for="endDate") End Date:
+                    input(type="date" class="form-control" name="endDate" value="")
+                button(class="btn btn-primary") Submit
+        
+        script(src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous")
+        script(src='/public/scripts/main.js')
